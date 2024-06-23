@@ -1,0 +1,10 @@
+[submodule "SDL2Image"]
+	# git submodule add --force -b SDL2Image --name SDL2Image https://github.com/AmanRathoreP/useful-libs vendor/SDL2Image
+	path = vendor/SDL2Image
+	url = https://github.com/AmanRathoreP/useful-libs
+	branch = SDL2Image
+[submodule "imgui"]
+	# git submodule add --force -b docking --name imgui https://github.com/ocornut/imgui vendor/imgui
+	path = vendor/imgui
+	url = https://github.com/ocornut/imgui
+	branch = docking

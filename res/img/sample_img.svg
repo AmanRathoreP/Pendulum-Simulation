@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="203.23204mm"
+   height="259.90802mm"
+   viewBox="0 0 203.23204 259.90802"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.4535219,-29.451175)">
+    <text
+       xml:space="preserve"
+       style="font-size:16.9333px;white-space:pre;inline-size:119.681;fill:#96242f;fill-rule:evenodd;stroke:#00ce8f;stroke-width:0;stroke-linecap:round;stroke-linejoin:round"
+       x="38.634144"
+       y="98.999992"
+       id="text1"
+       transform="matrix(1.1037635,-2.5251273,2.835203,1.2393013,-283.95016,238.48558)"><tspan
+         x="38.634144"
+         y="98.999992"
+         id="tspan3"><tspan
+           style="fill:#abdee5"
+           id="tspan2">imgui is </tspan></tspan><tspan
+         x="38.634144"
+         y="120.16662"
+         id="tspan5"><tspan
+           style="fill:#abdee5"
+           id="tspan4">working fine</tspan></tspan></text>
+  </g>
+</svg>
