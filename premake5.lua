@@ -1,4 +1,5 @@
 common_files = {
+    --imgui stuff
     "$(SolutionDir)/vendor/imgui/imgui.cpp",
     "$(SolutionDir)/vendor/imgui/imgui_demo.cpp",
     "$(SolutionDir)/vendor/imgui/imgui_draw.cpp",
@@ -7,7 +8,13 @@ common_files = {
     "$(SolutionDir)/vendor/imgui/backends/imgui_impl_sdl2.cpp",
     "$(SolutionDir)/vendor/imgui/backends/imgui_impl_vulkan.cpp",
     "$(SolutionDir)/vendor/imgui/misc/debuggers/imgui.natstepfilter",
-    "$(SolutionDir)/vendor/imgui/misc/debuggers/imgui.natvis"
+    "$(SolutionDir)/vendor/imgui/misc/debuggers/imgui.natvis",
+    --implot stuff
+    "$(SolutionDir)/vendor/implot/implot.h",
+    "$(SolutionDir)/vendor/implot/implot_internal.h",
+    "$(SolutionDir)/vendor/implot/implot.cpp",
+    "$(SolutionDir)/vendor/implot/implot_items.cpp",
+    "$(SolutionDir)/vendor/implot/implot_demo.cpp",
 }
 
 -- Function to concatenate two tables
@@ -26,6 +33,7 @@ function apply_common_filters(project_name)
         externalincludedirs {
             "vendor/SDL2Image/include",
             "vendor/imgui",
+            "vendor/implot",
             "$(VULKAN_SDK)/Include",
             "$(VULKAN_SDK)/Include/SDL2"
         }

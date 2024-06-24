@@ -10,4 +10,8 @@ void single_pendulum::loop(void)
     ImGui::Begin("Simulation");
     ImGui::Text("This is window for Single Pendulum.");
     ImGui::End();
+
+    ImPlot::CreateContext();
+    ImPlot::ShowDemoWindow();
+    ImPlot::DestroyContext();
 }
