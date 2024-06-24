@@ -98,6 +98,8 @@ project "single-pendulum"
 
     project_files  = {
         "src/main.cpp",
+        "src/ui/windows/single-pendulum.h",
+        "src/ui/windows/single-pendulum.cpp",
     }
 
     -- Appending common files with project files

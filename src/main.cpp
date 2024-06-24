@@ -21,6 +21,8 @@
 #include <SDL.h>
 #include <SDL_vulkan.h>
 #include <SDL_image.h>
+#include "ui/windows/single-pendulum.h"
+
 // Volk headers
 #ifdef IMGUI_IMPL_VULKAN_USE_VOLK
 #define VOLK_IMPLEMENTATION
@@ -490,6 +492,11 @@ int main(int, char **)
     // Our state
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
+    //* all the setup code for application goes here
+#ifdef PROJ_SINGLE_PENDULUM
+    single_pendulum::setup();
+#endif // PROJ_SINGLE_PENDULUM
+
     // Main loop
     bool done = false;
     while (!done)
@@ -552,6 +559,10 @@ int main(int, char **)
             ImGui::End();
         }
 
+        //* all the setup code for application goes here
+#ifdef PROJ_SINGLE_PENDULUM
+        single_pendulum::loop();
+#endif // PROJ_SINGLE_PENDULUM
 
         // Rendering
         ImGui::Render();
