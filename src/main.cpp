@@ -532,6 +532,35 @@ int main(int, char **)
         ImGui_ImplSDL2_NewFrame();
         ImGui::NewFrame();
 
+        //* creating menu bar
+        if (ImGui::BeginMainMenuBar())
+        {
+            if (ImGui::BeginMenu("Workspace"))
+            {
+                if (ImGui::BeginMenu("Layouts"))
+                {
+                    if (ImGui::MenuItem("Default")) {}
+                    if (ImGui::MenuItem("Advance")) {}
+                    ImGui::EndMenu();
+                }
+                ImGui::EndMenu();
+            }
+            if (ImGui::BeginMenu("Panels"))
+            {
+                if (ImGui::MenuItem("Logs")){}
+                ImGui::EndMenu();
+            } 
+            if (ImGui::BeginMenu("Help"))
+            {
+                if (ImGui::MenuItem("Usage")) {}
+                ImGui::Separator();
+                if (ImGui::MenuItem("About")) {}
+                if (ImGui::MenuItem("Author")) {}
+                ImGui::EndMenu();
+            }
+            ImGui::EndMainMenuBar();
+        }
+
         // 2. Show a simple window that we create ourselves. We use a Begin/End pair to create a named window.
         {   
             static float old_f = 0.0f;
