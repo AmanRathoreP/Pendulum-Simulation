@@ -534,6 +534,7 @@ int main(int, char **)
         ImGui_ImplVulkan_NewFrame();
         ImGui_ImplSDL2_NewFrame();
         ImGui::NewFrame();
+        ImGui::DockSpaceOverViewport(0U, ImGui::GetMainViewport());
 
         //* creating menu bar
         if (ImGui::BeginMainMenuBar())
@@ -596,7 +597,6 @@ int main(int, char **)
         single_pendulum::loop();
 #endif // PROJ_SINGLE_PENDULUM
         log_panel.loop();
-        std::cout << "show_logs_panel = " << show_logs_panel << std::endl;
 
         // Rendering
         ImGui::Render();
