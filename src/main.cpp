@@ -22,6 +22,7 @@
 #include <SDL_vulkan.h>
 #include <SDL_image.h>
 #include "ui/windows/single-pendulum.h"
+#include "ui/windows/logs-panel.h"
 
 // Volk headers
 #ifdef IMGUI_IMPL_VULKAN_USE_VOLK
@@ -496,6 +497,8 @@ int main(int, char **)
 #ifdef PROJ_SINGLE_PENDULUM
     single_pendulum::setup();
 #endif // PROJ_SINGLE_PENDULUM
+    bool show_logs_panel = true;
+    auto log_panel = logs_panel("Logs panel", show_logs_panel);
 
     // Main loop
     bool done = false;
@@ -592,6 +595,8 @@ int main(int, char **)
 #ifdef PROJ_SINGLE_PENDULUM
         single_pendulum::loop();
 #endif // PROJ_SINGLE_PENDULUM
+        log_panel.loop();
+        std::cout << "show_logs_panel = " << show_logs_panel << std::endl;
 
         // Rendering
         ImGui::Render();

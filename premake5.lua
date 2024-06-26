@@ -15,6 +15,9 @@ common_files = {
     "$(SolutionDir)/vendor/implot/implot.cpp",
     "$(SolutionDir)/vendor/implot/implot_items.cpp",
     "$(SolutionDir)/vendor/implot/implot_demo.cpp",
+    --comman files used by solution
+    "src/ui/windows/logs-panel.h",
+    "src/ui/windows/logs-panel.cpp",
 }
 
 -- Function to concatenate two tables
