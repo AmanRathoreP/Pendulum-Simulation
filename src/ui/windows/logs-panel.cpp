@@ -1,4 +1,4 @@
-#include "logs-panel.h"
+#include "logs-panel.hpp"
 
 logs_panel::logs_panel(std::string window_name, bool& show_window) :window_name(window_name), show_window(show_window) {
 	std::cout << "Creating " << window_name << std::endl;

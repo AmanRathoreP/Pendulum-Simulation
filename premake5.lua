@@ -16,7 +16,7 @@ common_files = {
     "$(SolutionDir)/vendor/implot/implot_items.cpp",
     "$(SolutionDir)/vendor/implot/implot_demo.cpp",
     --comman files used by solution
-    "src/ui/windows/logs-panel.h",
+    "src/ui/windows/logs-panel.hpp",
     "src/ui/windows/logs-panel.cpp",
 }
 
@@ -109,7 +109,7 @@ project "single-pendulum"
 
     project_files  = {
         "src/main.cpp",
-        "src/ui/windows/single-pendulum.h",
+        "src/ui/windows/single-pendulum.hpp",
         "src/ui/windows/single-pendulum.cpp",
     }
 

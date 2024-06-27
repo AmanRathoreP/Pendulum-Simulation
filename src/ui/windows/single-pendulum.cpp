@@ -1,4 +1,4 @@
-#include "single-pendulum.h"
+#include "single-pendulum.hpp"
 
 void single_pendulum::setup(void)
 {
