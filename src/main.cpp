@@ -23,7 +23,6 @@
 #include <SDL_image.h>
 #include "ui/windows/single-pendulum.hpp"
 #include "ui/windows/logs-panel.hpp"
-#include "utilities/window-manager.hpp"
 
 // Volk headers
 #ifdef IMGUI_IMPL_VULKAN_USE_VOLK
