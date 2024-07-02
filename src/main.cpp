@@ -497,8 +497,7 @@ int main(int, char **)
 #ifdef PROJ_SINGLE_PENDULUM
     single_pendulum::setup();
 #endif // PROJ_SINGLE_PENDULUM
-    bool show_logs_panel = true;
-    auto log_panel = logs_panel("Logs panel", show_logs_panel);
+    auto log_panel = logs_panel("Logs panel");
 
     // Main loop
     bool done = false;
